@@ -1,0 +1,63 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+  &_container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1136px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &_left {
+    align-items: center;
+    display: flex;
+    gap: 4px;
+  }
+
+  &_logo {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -3%;
+    color: #111111;
+    text-transform: uppercase;
+    span {
+      font-style: italic;
+    }
+  }
+  &_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 139px;
+    &--part:last-child {
+      display: flex;
+      gap: 19px;
+      svg {
+        cursor: pointer;
+        path {
+          transition: 0.3s ease-in-out;
+        }
+        &:hover {
+          path {
+            stroke: #fd9222;
+          }
+        }
+      }
+    }
+    &--nav {
+      display: flex;
+      gap: 24px;
+      &--link {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -2%;
+        vertical-align: middle;
+        color: #111111;
+      }
+    }
+  }
+}
