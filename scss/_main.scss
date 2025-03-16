@@ -1,0 +1,75 @@
+.main {
+  &_container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1136px;
+  }
+
+  &_first {
+    .main_container {
+      background-image: url("../img/chocolate-covered-cocoa-powder\ 1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 30px;
+    }
+
+    &--title {
+      padding-left: 40px;
+      padding-top: 381px;
+      max-width: 484px;
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: -3%;
+      color: white;
+    }
+
+    &--bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 32px;
+      padding: 0 40px 40px 40px;
+
+      &--part {
+        button:first-child {
+          background-color: #fd9222;
+          transition: 0.35s ease-in-out;
+
+          &:hover {
+            background-color: #fcf1e0;
+            color: #fd9222;
+          }
+        }
+
+        button:last-child {
+          background-color: transparent;
+          border: 1px solid white;
+          transition: 0.35s ease-in-out;
+
+          &:hover {
+            background-color: #ffffff;
+            border: 1px solid #fd9222;
+            color: #fd9222;
+          }
+        }
+
+        &:last-child {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+
+          span {
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: -3%;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

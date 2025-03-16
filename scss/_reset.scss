@@ -5,3 +5,23 @@
   list-style-type: none;
   text-decoration: none;
 }
+
+.template-btn {
+  width: 144px;
+  height: 45px;
+
+  border-radius: 100px;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
