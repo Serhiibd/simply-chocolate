@@ -444,4 +444,57 @@
       cursor: pointer;
     }
   }
+  &_eighth {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image: url(../img/chocolate-circles.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .main_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &--title {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -3%;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      max-width: 378px;
+      color: white;
+    }
+
+    &--text {
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -2%;
+      text-align: center;
+      margin-bottom: 24px;
+      max-width: 467px;
+      color: #ffffff;
+    }
+
+    &--btn {
+      width: 172px;
+      height: 50px;
+      border-radius: 100px;
+      border: 0;
+      cursor: pointer;
+      background-color: #fd9222;
+      color: white;
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+  }
 }
