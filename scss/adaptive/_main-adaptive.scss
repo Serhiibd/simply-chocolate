@@ -1,0 +1,10 @@
+@media screen and (max-width: 1050px) {
+  .header {
+    &_right {
+      display: none;
+      &--mobile {
+        display: block;
+      }
+    }
+  }
+}
