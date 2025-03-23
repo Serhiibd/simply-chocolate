@@ -146,6 +146,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
+  padding: 0 20px;
 }
 .main_first--title {
   padding-left: 40px;
@@ -704,5 +705,22 @@ html {
   }
   .header_right--mobile {
     display: block;
+  }
+}
+@media screen and (max-width: 605px) {
+  .main_first--bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+}
+@media screen and (max-width: 430px) {
+  .main_first--bottom--part {
+    display: flex;
+  }
+  .main_first--bottom--part:first-child {
+    align-items: start;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */

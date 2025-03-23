@@ -1,9 +1,26 @@
-@media screen and (max-width: 1050px) {
-  .header {
-    &_right {
-      display: none;
-      &--mobile {
-        display: block;
+@media screen and (max-width: 605px) {
+  .main {
+    &_first {
+      &--bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .main {
+    &_first {
+      &--bottom--part {
+        display: flex;
+
+        &:first-child {
+          align-items: start;
+          flex-direction: column;
+        }
       }
     }
   }
