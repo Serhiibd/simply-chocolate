@@ -140,6 +140,7 @@ html {
   margin: 0 auto;
   width: 100%;
   max-width: 1136px;
+  padding: 0 20px;
 }
 .main_first .main_container {
   background-image: url("../img/chocolate-covered-cocoa-powder 1.png");
@@ -705,6 +706,35 @@ html {
   }
   .header_right--mobile {
     display: block;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .main_second .main_container {
+    display: grid;
+    grid-template-areas: "first-card second-card" "third-card third-card";
+  }
+  .main_second--card:first-child {
+    grid-area: first-card;
+  }
+  .main_second--card:nth-child(2) {
+    grid-area: second-card;
+  }
+  .main_second--card:nth-child(3) {
+    grid-area: third-card;
+  }
+  .main_second--card:nth-child(3) p {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}
+@media screen and (max-width: 653px) {
+  .main_second .main_container {
+    gap: 30px;
+    grid-template-areas: "first-card" "second-card" "third-card";
+  }
+  .main_second--card p {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
 }
 @media screen and (max-width: 605px) {

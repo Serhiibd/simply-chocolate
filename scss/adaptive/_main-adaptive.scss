@@ -1,3 +1,49 @@
+@media screen and (max-width: 1025px) {
+  .main {
+    &_second {
+      .main_container {
+        display: grid;
+        grid-template-areas:
+          "first-card second-card"
+          "third-card third-card";
+      }
+      &--card {
+        &:first-child {
+          grid-area: first-card;
+        }
+        &:nth-child(2) {
+          grid-area: second-card;
+        }
+        &:nth-child(3) {
+          grid-area: third-card;
+          p {
+            max-width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 653px) {
+  .main {
+    &_second {
+      .main_container {
+        gap: 30px;
+        grid-template-areas:
+          "first-card"
+          "second-card"
+          "third-card";
+      }
+      &--card {
+        p {
+          max-width: fit-content;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 605px) {
   .main {
     &_first {
