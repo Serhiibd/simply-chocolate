@@ -720,6 +720,30 @@ html {
     align-items: center;
   }
 }
+@media screen and (max-width: 1175px) {
+  .main_fourth--content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_fourth--content--left {
+    display: flex;
+    justify-content: center;
+  }
+  .main_fifth--cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1165px) {
+  .main_sixth--bottom {
+    max-width: 752px;
+    width: 100%;
+  }
+  .main_sixth--images div:first-child {
+    display: none;
+  }
+}
 @media screen and (max-width: 1025px) {
   .main_second .main_container {
     display: grid;
@@ -739,6 +763,31 @@ html {
     max-width: fit-content;
   }
 }
+@media screen and (max-width: 775px) {
+  .main_sixth--images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .main_sixth--images div {
+    display: flex;
+    justify-content: center;
+  }
+  .main_sixth--bottom {
+    max-width: 400px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 685px) {
+  .main_fifth--cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
 @media screen and (max-width: 653px) {
   .main_second .main_container {
     gap: 30px;
@@ -747,6 +796,11 @@ html {
   .main_second--card p {
     max-width: -moz-fit-content;
     max-width: fit-content;
+  }
+}
+@media screen and (max-width: 645px) {
+  .main_fourth--content--left img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 607px) {
@@ -763,12 +817,22 @@ html {
     align-items: start;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 440px) {
+  .main_fourth--content--left img {
+    display: none;
+  }
+}
+@media screen and (max-width: 440px) and (max-width: 430px) {
   .main_first--bottom--part {
     display: flex;
   }
   .main_first--bottom--part:first-child {
     align-items: start;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main_sixth--images img {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
