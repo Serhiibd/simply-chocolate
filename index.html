@@ -1,494 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chocolate - Home Page</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header_container">
-        <div class="header_left">
-          <h2 class="header_logo"><span>Simply</span> Chocolate</h2>
-          <img src="./img/chocolate.svg" alt="chocolate" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chocolate - Home Page</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_container">
+      <div class="header_left">
+        <h2 class="header_logo"><span>Simply</span> Chocolate</h2>
+        <img src="./img/chocolate.svg" alt="chocolate" />
+      </div>
+      <div class="header_right">
+        <div class="header_right--part">
+          <ul class="header_right--nav">
+            <li><a href="#" class="header_right--nav--link">Home</a></li>
+            <li>
+              <a href="#how-its-made" class="header_right--nav--link">How it’s made?</a>
+            </li>
+            <li>
+              <a href="#our-products" class="header_right--nav--link">Our products</a>
+            </li>
+            <li>
+              <a href="#top-sellers" class="header_right--nav--link">Top sellers</a>
+            </li>
+            <li>
+              <a href="#chocolate-is-loved" class="header_right--nav--link">Chocolate is loved</a>
+            </li>
+          </ul>
         </div>
-        <div class="header_right">
-          <div class="header_right--part">
-            <ul class="header_right--nav">
-              <li><a href="#" class="header_right--nav--link">Home</a></li>
-              <li>
-                <a href="#how-its-made" class="header_right--nav--link"
-                  >How it’s made?</a
-                >
-              </li>
-              <li>
-                <a href="#our-products" class="header_right--nav--link"
-                  >Our products</a
-                >
-              </li>
-              <li>
-                <a href="#top-sellers" class="header_right--nav--link"
-                  >Top sellers</a
-                >
-              </li>
-              <li>
-                <a href="#chocolate-is-loved" class="header_right--nav--link"
-                  >Chocolate is loved</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="header_right--part">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
-                stroke="#111111"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
-                stroke="#111111"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
-                stroke="#111111"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M17.5 6.5H17.51"
-                stroke="#111111"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M17.5 6.5H17.51"
-                stroke="#111111"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M23 3.00005C22.0424 3.67552 20.9821 4.19216 19.86 4.53005C19.2577 3.83756 18.4573 3.34674 17.567 3.12397C16.6767 2.90121 15.7395 2.95724 14.8821 3.2845C14.0247 3.61176 13.2884 4.19445 12.773 4.95376C12.2575 5.71308 11.9877 6.61238 12 7.53005V8.53005C10.2426 8.57561 8.50127 8.18586 6.93101 7.39549C5.36074 6.60513 3.51032 4.72313 2.5 3.2845C2.5 3.2845 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.50005C20.9991 7.2215 20.9723 6.94364 20.92 6.67005C21.9406 5.66354 22.6608 4.39276 23 3.00005Z"
-                stroke="#111111"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="header_right--mobile">
-          <img src="./img/burger.svg" alt="mobile-menu" />
-          <div class="header_right--mobile--list">
-            <div class="header_right--mobile--list--close">
-              <img src="./img/x.svg" alt="X" />
-            </div>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li>
-                <a href="#how-its-made">How it’s made?</a>
-              </li>
-              <li>
-                <a href="#our-products">Our products</a>
-              </li>
-              <li>
-                <a href="#top-sellers">Top sellers</a>
-              </li>
-              <li>
-                <a href="#chocolate-is-loved">Chocolate is loved</a>
-              </li>
-            </ul>
-          </div>
+        <div class="header_right--part">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
+              stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
+              stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
+              stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M17.5 6.5H17.51" stroke="#111111" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M17.5 6.5H17.51" stroke="#111111" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M23 3.00005C22.0424 3.67552 20.9821 4.19216 19.86 4.53005C19.2577 3.83756 18.4573 3.34674 17.567 3.12397C16.6767 2.90121 15.7395 2.95724 14.8821 3.2845C14.0247 3.61176 13.2884 4.19445 12.773 4.95376C12.2575 5.71308 11.9877 6.61238 12 7.53005V8.53005C10.2426 8.57561 8.50127 8.18586 6.93101 7.39549C5.36074 6.60513 3.51032 4.72313 2.5 3.2845C2.5 3.2845 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.50005C20.9991 7.2215 20.9723 6.94364 20.92 6.67005C21.9406 5.66354 22.6608 4.39276 23 3.00005Z"
+              stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
         </div>
       </div>
-    </header>
-    <main class="main">
-      <section class="main_first">
-        <div class="main_container">
-          <h1 class="main_first--title">
-            Treat yourself or a loved one to our finest ingredients for a moment
-            of pure delight!
-          </h1>
-          <div class="main_first--bottom">
-            <div class="main_first--bottom--part">
-              <button class="template-btn">Buy now</button>
-              <button class="template-btn">How it’s made</button>
-            </div>
-            <div class="main_first--bottom--part">
-              <span>scroll down</span>
-              <img src="./img/2.svg" alt="scroll-down" />
-            </div>
+      <div class="header_right--mobile">
+        <img src="./img/burger.svg" alt="mobile-menu" />
+        <div class="header_right--mobile--list">
+          <div class="header_right--mobile--list--close">
+            <img src="./img/x.svg" alt="X" />
           </div>
-        </div>
-      </section>
-      <section class="main_second">
-        <div class="main_container">
-          <div class="main_second--card">
-            <img src="./img/icon1.svg" alt="icon1" />
-            <h2 class="main_second--title">Unsurpassed taste</h2>
-            <p class="main_second--text">
-              Crafted with the finest quality cocoa beans and a dedication to
-              perfection, each bite is a decadent experience that simply cannot
-              be matched. Savor the richness and complexity of our Unsurpassed
-              Taste and discover a new level of chocolate bliss.
-            </p>
-          </div>
-          <div class="main_second--card">
-            <img src="./img/icon2.svg" alt="icon2" />
-            <h2 class="main_second--title">Affordable price</h2>
-            <p class="main_second--text">
-              Indulge in high-quality chocolate without breaking the bank with
-              Simply Chocolate's selection of affordable treats. Enjoy
-              mouth-watering truffles and velvety chocolate bars without
-              sacrificing taste or quality. Browse our selection and indulge in
-              affordable luxury today.
-            </p>
-          </div>
-          <div class="main_second--card">
-            <img src="./img/icon3.svg" alt="icon3" />
-            <h2 class="main_second--title">Own production</h2>
-            <p class="main_second--text">
-              We take pride in our own production process, ensuring that every
-              step is carefully crafted to perfection. From selecting the finest
-              ingredients to handcrafting each piece, our attention to detail is
-              evident in every bite.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="main_third">
-        <div class="main_container">
-          <h2 class="main_third--title">
-            IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION
-          </h2>
-          <p class="main_third--text">
-            At Simply Chocolate, we believe that the secret to exceptional
-            chocolate is in the details. From the sourcing of the finest
-            ingredients to the careful crafting of each individual piece, every
-            step of our process adds up to one exceptional taste sensation.
-          </p>
-          <div class="main_third--cards">
-            <div class="main_third--cards--el">
-              <img src="./img/chocolate-bar.png" alt="chocolate bar" />
-              <h3 class="main_third--cards--el--title">MILK CHOCOLATE</h3>
-            </div>
-            <div class="main_third--cards--el">
-              <img src="./img/milk.png" alt="milk" />
-              <h3 class="main_third--cards--el--title">MILK</h3>
-            </div>
-            <div class="main_third--cards--el">
-              <img src="./img/nuts.png" alt="nuts" />
-              <h3 class="main_third--cards--el--title">nuts</h3>
-            </div>
-            <div class="main_third--cards--el">
-              <img src="./img/cocoa-beans.png" alt="cocoa-beans" />
-              <h3 class="main_third--cards--el--title">
-                sEMI - SWEET CHOCOLATE
-              </h3>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="main_fourth" id="how-its-made">
-        <div class="main_container">
-          <h2 class="main_fourth--title">HOW IT’S <span>made? </span></h2>
-          <div class="main_fourth--content">
-            <div class="main_fourth--content--left">
-              <img src="./img/chocolate-pour.png" alt="chocolate-pour" />
-            </div>
-            <div class="main_fourth--content--right">
-              <h2 class="main_fourth--content--right--title">
-                Try our chocolates today and discover the perfect balance of
-                flavor
-              </h2>
-              <ul class="main_fourth--content--right--list">
-                <li>
-                  <img src="./img/dot.svg" alt="dot" /><a
-                    href="#"
-                    class="main_fourth--content--right--list--link"
-                    >Heat the milk in a saucepan without bringing it to a boil.
-                    Add sugar and cocoa powder.</a
-                  >
-                </li>
-                <li>
-                  <img src="./img/dot.svg" alt="dot" /><a
-                    href="#"
-                    class="main_fourth--content--right--list--link"
-                    >At the same time, prepare a water bath. Melt the butter on
-                    it.</a
-                  >
-                </li>
-                <li>
-                  <img src="./img/dot.svg" alt="dot" /><a
-                    href="#"
-                    class="main_fourth--content--right--list--link"
-                    >"Mix" the milk mixture and already liquid butter. Mix
-                    thoroughly with a silicone spatula so that the mass becomes
-                    uniform and silky.</a
-                  >
-                </li>
-                <li>
-                  <img src="./img/dot.svg" alt="dot" /><a
-                    href="#"
-                    class="main_fourth--content--right--list--link"
-                    >Heat the mixture over low heat, letting it barely boil.</a
-                  >
-                </li>
-                <li>
-                  <img src="./img/dot.svg" alt="dot" /><a
-                    href="#"
-                    class="main_fourth--content--right--list--link"
-                    >Pour the chocolate into special containers (can be replaced
-                    with ice molds). Allow to cool and harden.</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="main_fifth" id="our-products">
-        <div class="main_container">
-          <h2 class="main_fifth--title">our <span>products</span></h2>
-          <div class="main_fifth--cards">
-            <div class="main_fifth--cards--el">
-              <img src="./img/orangedark.png" alt="orangedark" />
-              <h3 class="main_fifth--cards--el--title">orange</h3>
-              <p class="main_fifth--cards--el--text">Dark chocolate</p>
-              <button class="main_fifth--cards--el--btn">45 UAH</button>
-            </div>
-            <div class="main_fifth--cards--el">
-              <img src="./img/applecranberry.png" alt="applecranberry" />
-              <h3 class="main_fifth--cards--el--title">APPLE&CRANBERRY</h3>
-              <p class="main_fifth--cards--el--text">Milk chocolate</p>
-              <button class="main_fifth--cards--el--btn">50 UAH</button>
-            </div>
-            <div class="main_fifth--cards--el">
-              <img src="./img/limeseasalt.png" alt="limeseasalt" />
-              <h3 class="main_fifth--cards--el--title">lime&sea salt</h3>
-              <p class="main_fifth--cards--el--text">Dark chocolate</p>
-              <button class="main_fifth--cards--el--btn">66 UAH</button>
-            </div>
-            <div class="main_fifth--cards--el">
-              <img src="./img/pineappledark.png" alt="pineappledark" />
-              <h3 class="main_fifth--cards--el--title">pineapple</h3>
-              <p class="main_fifth--cards--el--text">Dark chocolate</p>
-              <button class="main_fifth--cards--el--btn">54 UAH</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="main_sixth" id="top-sellers">
-        <div class="main_container">
-          <h2 class="main_sixth--title"><span>Top</span> Sellers</h2>
-          <div class="main_sixth--images">
-            <div class="">
-              <img src="./img/nut-chocolate.png" alt="chocolate" />
-            </div>
-            <div class="">
-              <img src="./img/chocolate-flower.png" alt="chocolate" />
-            </div>
-            <div class="">
-              <img src="./img/chocolate-tower.png" alt="chocolate" />
-            </div>
-          </div>
-          <div class="main_sixth--bottom">
-            <p class="main_sixth--bottom--text">
-              Crazy enough chocolate originates from a bean just like the coffee
-              bean called Cacao. Cacao has been around for thousands of years
-              and was first discovered by the Native American tribe called the
-              Mayans.
-            </p>
-            <button class="main_sixth--bottom--btn">Buy now</button>
-          </div>
-        </div>
-      </section>
-      <section class="main_seventh" id="chocolate-is-loved">
-        <div class="main_container">
-          <h2 class="main_seventh--title"><span>chocolate</span> is loved</h2>
-          <div class="main_seventh--cards">
-            <div class="main_seventh--cards--el">
-              <div class="main_seventh--cards--el--img">
-                <img src="./img/woman1-pfp.png" alt="woman" />
-              </div>
-              <h4 class="main_seventh--cards--el--title">
-                Victoria Dobrzhanska
-              </h4>
-              <p class="main_seventh--cards--el--text">
-                I love this chocolate bar. Perfect combination of light crispy
-                wafer, covered in a thin layer chocolate.
-              </p>
-            </div>
-            <div class="main_seventh--cards--el">
-              <div class="main_seventh--cards--el--img">
-                <img src="./img/man-pfp.png" alt="woman" />
-              </div>
-              <h4 class="main_seventh--cards--el--title">Nazar Babenko</h4>
-              <p class="main_seventh--cards--el--text">
-                This chocolate confection is a delight! A delight! The wafer is
-                light and crisp, the hazelnut cream is smooth, and the chocolate
-                is good.
-              </p>
-            </div>
-            <div class="main_seventh--cards--el">
-              <div class="main_seventh--cards--el--img">
-                <img src="./img/woman2-pfp.png" alt="woman" />
-              </div>
-              <h4 class="main_seventh--cards--el--title">Olena Kampusch</h4>
-              <p class="main_seventh--cards--el--text">
-                Chocolate is a family favourite treat. Love the delicious smooth
-                chocolate and the creaminess inside. The wafer is soft but
-                crunchy.
-              </p>
-            </div>
-          </div>
-          <button class="main_seventh--btn">Leave a review</button>
-        </div>
-      </section>
-      <section class="main_eighth">
-        <div class="main_container">
-          <h2 class="main_eighth--title">exPLORE OUR NEW CHOCOLATE FIRST</h2>
-          <p class="main_eighth--text">
-            From the velvety texture to the rich and complex flavor, our New
-            Chocolate is a true indulgence that will leave you craving more.
-            Made with only the finest ingredients and handcrafted with the
-            utmost care, each piece is a work of art that is sure to please.
-          </p>
-          <button class="main_eighth--btn">Subscribe</button>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer_container">
-        <div class="footer_top">
-          <div class="footer_top--left">
-            <h2 class="footer_top--left--title">
-              <span>Chocolate</span> a delicious cure for a bad day
-            </h2>
-          </div>
-          <div class="footer_top--right">
-            <div class="footer_top--right--part">
-              <h4 class="footer_top--right--part--title">Contact us</h4>
-              <div class="footer_top--right--part--links">
-                <a
-                  href="tel:+380684439426"
-                  class="footer_top--right--part--links--el"
-                  >+380 (68) 443-94-26</a
-                >
-                <a
-                  href="mailto:simplychoc@gmail.com"
-                  class="footer_top--right--part--links--el"
-                  >simplychoc@gmail.com</a
-                >
-              </div>
-            </div>
-            <div class="footer_top--right--part">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17.5 6.5H17.51"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17.5 6.5H17.51"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M23 3.00005C22.0424 3.67552 20.9821 4.19216 19.86 4.53005C19.2577 3.83756 18.4573 3.34674 17.567 3.12397C16.6767 2.90121 15.7395 2.95724 14.8821 3.2845C14.0247 3.61176 13.2884 4.19445 12.773 4.95376C12.2575 5.71308 11.9877 6.61238 12 7.53005V8.53005C10.2426 8.57561 8.50127 8.18586 6.93101 7.39549C5.36074 6.60513 4.01032 5.43868 3 4.00005C3 4.00005 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.50005C20.9991 7.2215 20.9723 6.94364 20.92 6.67005C21.9406 5.66354 22.6608 4.39276 23 3.00005Z"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="footer_bottom">
-          <ul class="footer_bottom--list">
-            <li><a href="#" class="footer_bottom--list--link">Home</a></li>
+          <ul>
+            <li><a href="#">Home</a></li>
             <li>
-              <a href="#" class="footer_bottom--list--link">How it’s made?</a>
+              <a href="#how-its-made">How it’s made?</a>
             </li>
             <li>
-              <a href="#" class="footer_bottom--list--link">Our products</a>
+              <a href="#our-products">Our products</a>
             </li>
             <li>
-              <a href="#" class="footer_bottom--list--link">Top sellers</a>
+              <a href="#top-sellers">Top sellers</a>
             </li>
             <li>
-              <a href="#" class="footer_bottom--list--link"
-                >Chocolate is loved</a
-              >
+              <a href="#chocolate-is-loved">Chocolate is loved</a>
             </li>
           </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main_first">
+      <div class="main_container">
+        <h1 class="main_first--title">
+          Treat yourself or a loved one to our finest ingredients for a moment
+          of pure delight!
+        </h1>
+        <div class="main_first--bottom">
+          <div class="main_first--bottom--part">
+            <button class="template-btn">Buy now</button>
+            <button class="template-btn">How it’s made</button>
+          </div>
+          <div class="main_first--bottom--part">
+            <span>scroll down</span>
+            <img src="./img/2.svg" alt="scroll-down" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main_second">
+      <div class="main_container">
+        <div class="main_second--card">
+          <img src="./img/icon1.svg" alt="icon1" />
+          <h2 class="main_second--title">Unsurpassed taste</h2>
+          <p class="main_second--text">
+            Crafted with the finest quality cocoa beans and a dedication to
+            perfection, each bite is a decadent experience that simply cannot
+            be matched. Savor the richness and complexity of our Unsurpassed
+            Taste and discover a new level of chocolate bliss.
+          </p>
+        </div>
+        <div class="main_second--card">
+          <img src="./img/icon2.svg" alt="icon2" />
+          <h2 class="main_second--title">Affordable price</h2>
+          <p class="main_second--text">
+            Indulge in high-quality chocolate without breaking the bank with
+            Simply Chocolate's selection of affordable treats. Enjoy
+            mouth-watering truffles and velvety chocolate bars without
+            sacrificing taste or quality. Browse our selection and indulge in
+            affordable luxury today.
+          </p>
+        </div>
+        <div class="main_second--card">
+          <img src="./img/icon3.svg" alt="icon3" />
+          <h2 class="main_second--title">Own production</h2>
+          <p class="main_second--text">
+            We take pride in our own production process, ensuring that every
+            step is carefully crafted to perfection. From selecting the finest
+            ingredients to handcrafting each piece, our attention to detail is
+            evident in every bite.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="main_third">
+      <div class="main_container">
+        <h2 class="main_third--title">
+          IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION
+        </h2>
+        <p class="main_third--text">
+          At Simply Chocolate, we believe that the secret to exceptional
+          chocolate is in the details. From the sourcing of the finest
+          ingredients to the careful crafting of each individual piece, every
+          step of our process adds up to one exceptional taste sensation.
+        </p>
+        <div class="main_third--cards">
+          <div class="main_third--cards--el">
+            <div class="card-face">
+              <img src="./img/chocolate-bar.png" alt="chocolate bar" />
+              <h3 class="main_third--cards--el--title">MILK CHOCOLATE</h3>
+            </div>
+            <div class="main_third--cards--el--hover card-face">
+              <h3 class="main_third--cards--el--hover--title">MILK CHOCOLATE</h3>
+              <div class="main_third--cards--el--hover--btns">
+                <button>chocolate</button>
+                <button>the benefits</button>
+              </div>
+              <p class="main_third--cards--el--hover--text">Milk chocolate is a solid chocolate confectionery containing
+                cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and
+                consumed as a beverage in pre-Columbian times...
+              </p>
+            </div>
+          </div>
+          <div class="main_third--cards--el">
+            <img src="./img/milk.png" alt="milk" />
+            <h3 class="main_third--cards--el--title">MILK</h3>
+          </div>
+          <div class="main_third--cards--el">
+            <img src="./img/nuts.png" alt="nuts" />
+            <h3 class="main_third--cards--el--title">nuts</h3>
+          </div>
+          <div class="main_third--cards--el">
+            <img src="./img/cocoa-beans.png" alt="cocoa-beans" />
+            <h3 class="main_third--cards--el--title">
+              sEMI - SWEET CHOCOLATE
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main_fourth" id="how-its-made">
+      <div class="main_container">
+        <h2 class="main_fourth--title">HOW IT’S <span>made? </span></h2>
+        <div class="main_fourth--content">
+          <div class="main_fourth--content--left">
+            <img src="./img/chocolate-pour.png" alt="chocolate-pour" />
+          </div>
+          <div class="main_fourth--content--right">
+            <h2 class="main_fourth--content--right--title">
+              Try our chocolates today and discover the perfect balance of
+              flavor
+            </h2>
+            <ul class="main_fourth--content--right--list">
+              <li>
+                <img src="./img/dot.svg" alt="dot" /><a href="#" class="main_fourth--content--right--list--link">Heat
+                  the milk in a saucepan without bringing it to a boil.
+                  Add sugar and cocoa powder.</a>
+              </li>
+              <li>
+                <img src="./img/dot.svg" alt="dot" /><a href="#" class="main_fourth--content--right--list--link">At the
+                  same time, prepare a water bath. Melt the butter on
+                  it.</a>
+              </li>
+              <li>
+                <img src="./img/dot.svg" alt="dot" /><a href="#" class="main_fourth--content--right--list--link">"Mix"
+                  the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.</a>
+              </li>
+              <li>
+                <img src="./img/dot.svg" alt="dot" /><a href="#" class="main_fourth--content--right--list--link">Heat
+                  the mixture over low heat, letting it barely boil.</a>
+              </li>
+              <li>
+                <img src="./img/dot.svg" alt="dot" /><a href="#" class="main_fourth--content--right--list--link">Pour
+                  the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main_fifth" id="our-products">
+      <div class="main_container">
+        <h2 class="main_fifth--title">our <span>products</span></h2>
+        <div class="main_fifth--cards">
+          <div class="main_fifth--cards--el">
+            <img src="./img/orangedark.png" alt="orangedark" />
+            <h3 class="main_fifth--cards--el--title">orange</h3>
+            <p class="main_fifth--cards--el--text">Dark chocolate</p>
+            <button class="main_fifth--cards--el--btn">45 UAH</button>
+          </div>
+          <div class="main_fifth--cards--el">
+            <img src="./img/applecranberry.png" alt="applecranberry" />
+            <h3 class="main_fifth--cards--el--title">APPLE&CRANBERRY</h3>
+            <p class="main_fifth--cards--el--text">Milk chocolate</p>
+            <button class="main_fifth--cards--el--btn">50 UAH</button>
+          </div>
+          <div class="main_fifth--cards--el">
+            <img src="./img/limeseasalt.png" alt="limeseasalt" />
+            <h3 class="main_fifth--cards--el--title">lime&sea salt</h3>
+            <p class="main_fifth--cards--el--text">Dark chocolate</p>
+            <button class="main_fifth--cards--el--btn">66 UAH</button>
+          </div>
+          <div class="main_fifth--cards--el">
+            <img src="./img/pineappledark.png" alt="pineappledark" />
+            <h3 class="main_fifth--cards--el--title">pineapple</h3>
+            <p class="main_fifth--cards--el--text">Dark chocolate</p>
+            <button class="main_fifth--cards--el--btn">54 UAH</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main_sixth" id="top-sellers">
+      <div class="main_container">
+        <h2 class="main_sixth--title"><span>Top</span> Sellers</h2>
+        <div class="main_sixth--images">
+          <div class="">
+            <img src="./img/nut-chocolate.png" alt="chocolate" />
+          </div>
+          <div class="">
+            <img src="./img/chocolate-flower.png" alt="chocolate" />
+          </div>
+          <div class="">
+            <img src="./img/chocolate-tower.png" alt="chocolate" />
+          </div>
+        </div>
+        <div class="main_sixth--bottom">
+          <p class="main_sixth--bottom--text">
+            Crazy enough chocolate originates from a bean just like the coffee
+            bean called Cacao. Cacao has been around for thousands of years
+            and was first discovered by the Native American tribe called the
+            Mayans.
+          </p>
+          <button class="main_sixth--bottom--btn">Buy now</button>
+        </div>
+      </div>
+    </section>
+    <section class="main_seventh" id="chocolate-is-loved">
+      <div class="main_container">
+        <h2 class="main_seventh--title"><span>chocolate</span> is loved</h2>
+        <div class="main_seventh--cards">
+          <div class="main_seventh--cards--el">
+            <div class="main_seventh--cards--el--img">
+              <img src="./img/woman1-pfp.png" alt="woman" />
+            </div>
+            <h4 class="main_seventh--cards--el--title">
+              Victoria Dobrzhanska
+            </h4>
+            <p class="main_seventh--cards--el--text">
+              I love this chocolate bar. Perfect combination of light crispy
+              wafer, covered in a thin layer chocolate.
+            </p>
+          </div>
+          <div class="main_seventh--cards--el">
+            <div class="main_seventh--cards--el--img">
+              <img src="./img/man-pfp.png" alt="woman" />
+            </div>
+            <h4 class="main_seventh--cards--el--title">Nazar Babenko</h4>
+            <p class="main_seventh--cards--el--text">
+              This chocolate confection is a delight! A delight! The wafer is
+              light and crisp, the hazelnut cream is smooth, and the chocolate
+              is good.
+            </p>
+          </div>
+          <div class="main_seventh--cards--el">
+            <div class="main_seventh--cards--el--img">
+              <img src="./img/woman2-pfp.png" alt="woman" />
+            </div>
+            <h4 class="main_seventh--cards--el--title">Olena Kampusch</h4>
+            <p class="main_seventh--cards--el--text">
+              Chocolate is a family favourite treat. Love the delicious smooth
+              chocolate and the creaminess inside. The wafer is soft but
+              crunchy.
+            </p>
+          </div>
+        </div>
+        <button class="main_seventh--btn">Leave a review</button>
+      </div>
+    </section>
+    <section class="main_eighth">
+      <div class="main_container">
+        <h2 class="main_eighth--title">exPLORE OUR NEW CHOCOLATE FIRST</h2>
+        <p class="main_eighth--text">
+          From the velvety texture to the rich and complex flavor, our New
+          Chocolate is a true indulgence that will leave you craving more.
+          Made with only the finest ingredients and handcrafted with the
+          utmost care, each piece is a work of art that is sure to please.
+        </p>
+        <button class="main_eighth--btn">Subscribe</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="footer_top">
+        <div class="footer_top--left">
+          <h2 class="footer_top--left--title">
+            <span>Chocolate</span> a delicious cure for a bad day
+          </h2>
+        </div>
+        <div class="footer_top--right">
+          <div class="footer_top--right--part">
+            <h4 class="footer_top--right--part--title">Contact us</h4>
+            <div class="footer_top--right--part--links">
+              <a href="tel:+380684439426" class="footer_top--right--part--links--el">+380 (68) 443-94-26</a>
+              <a href="mailto:simplychoc@gmail.com" class="footer_top--right--part--links--el">simplychoc@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer_top--right--part">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M17.5 6.5H17.51" stroke="white" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M17.5 6.5H17.51" stroke="white" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23 3.00005C22.0424 3.67552 20.9821 4.19216 19.86 4.53005C19.2577 3.83756 18.4573 3.34674 17.567 3.12397C16.6767 2.90121 15.7395 2.95724 14.8821 3.2845C14.0247 3.61176 13.2884 4.19445 12.773 4.95376C12.2575 5.71308 11.9877 6.61238 12 7.53005V8.53005C10.2426 8.57561 8.50127 8.18586 6.93101 7.39549C5.36074 6.60513 4.01032 5.43868 3 4.00005C3 4.00005 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.50005C20.9991 7.2215 20.9723 6.94364 20.92 6.67005C21.9406 5.66354 22.6608 4.39276 23 3.00005Z"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <ul class="footer_bottom--list">
+          <li><a href="#" class="footer_bottom--list--link">Home</a></li>
+          <li>
+            <a href="#" class="footer_bottom--list--link">How it’s made?</a>
+          </li>
+          <li>
+            <a href="#" class="footer_bottom--list--link">Our products</a>
+          </li>
+          <li>
+            <a href="#" class="footer_bottom--list--link">Top sellers</a>
+          </li>
+          <li>
+            <a href="#" class="footer_bottom--list--link">Chocolate is loved</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
-    <script src="./script.js"></script>
-  </body>
+  <script src="./script.js"></script>
+</body>
+
 </html>
