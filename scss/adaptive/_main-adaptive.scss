@@ -52,6 +52,33 @@
     }
   }
 }
+@media screen and (max-width: 1050px) {
+  .main {
+    &_seventh {
+      &--cards {
+        gap: 40px;
+        display: grid;
+        grid-template-areas:
+          "first-card second-card"
+          "third-card third-card";
+        &--el {
+          &:first-child {
+            grid-area: first-card;
+          }
+          &:nth-child(2) {
+            grid-area: second-card;
+            height: 95%;
+          }
+          &:nth-child(3) {
+            grid-area: third-card;
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1025px) {
   .main {
@@ -103,13 +130,29 @@
   }
 }
 
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 700px) {
   .main {
     &_fifth {
       &--cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
+      }
+    }
+    &_seventh {
+      &--cards {
+        display: grid;
+        grid-template-areas: none;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        &--el {
+          grid-area: unset !important;
+          &:first-child,
+          &:nth-child(2) {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
       }
     }
   }

@@ -744,6 +744,25 @@ html {
     display: none;
   }
 }
+@media screen and (max-width: 1050px) {
+  .main_seventh--cards {
+    gap: 40px;
+    display: grid;
+    grid-template-areas: "first-card second-card" "third-card third-card";
+  }
+  .main_seventh--cards--el:first-child {
+    grid-area: first-card;
+  }
+  .main_seventh--cards--el:nth-child(2) {
+    grid-area: second-card;
+    height: 95%;
+  }
+  .main_seventh--cards--el:nth-child(3) {
+    grid-area: third-card;
+    max-width: 100%;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1025px) {
   .main_second .main_container {
     display: grid;
@@ -781,11 +800,24 @@ html {
     text-align: center;
   }
 }
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 700px) {
   .main_fifth--cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
+  }
+  .main_seventh--cards {
+    display: grid;
+    grid-template-areas: none;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .main_seventh--cards--el {
+    grid-area: unset !important;
+  }
+  .main_seventh--cards--el:first-child, .main_seventh--cards--el:nth-child(2) {
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 653px) {
