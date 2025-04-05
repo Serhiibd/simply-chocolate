@@ -36,6 +36,9 @@
 
       &--part {
         button:first-child {
+          a {
+            color: #ffffff;
+          }
           background-color: #fd9222;
           transition: 0.35s ease-in-out;
 
@@ -49,6 +52,9 @@
           background-color: transparent;
           border: 1px solid white;
           transition: 0.35s ease-in-out;
+          a {
+            color: #ffffff;
+          }
 
           &:hover {
             background-color: #ffffff;

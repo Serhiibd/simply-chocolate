@@ -1,0 +1,53 @@
+.popup {
+  transition: 0.4s ease-in-out;
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  opacity: 0;
+  pointer-events: none;
+  width: 516px;
+  height: 414px;
+  background-color: #fd9222;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-image: url("../img/ezgif-1-2d3a67b880\ 1.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  &_close {
+    margin-top: 24px;
+    display: flex;
+    justify-content: end;
+    padding-right: 24px;
+    margin-bottom: 90px;
+    cursor: pointer;
+  }
+
+  &_info {
+    padding-left: 163px;
+    &--title {
+      margin-bottom: 8px;
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -2%;
+      text-transform: uppercase;
+      color: #fcf1e0;
+    }
+
+    &--text {
+      font-family: Montserrat;
+      font-weight: 350;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: -2%;
+      max-width: 309px;
+      color: #ffffff;
+    }
+  }
+}

@@ -5,6 +5,21 @@ document.addEventListener("DOMContentLoaded", function () {
     ".header_right--mobile--list--close"
   );
 
+  const openThankYouPopup = document.querySelectorAll(
+    ".main_fifth--cards--el--btn"
+  );
+  const thankYouPopup = document.querySelector(".popup");
+  const popupClose = document.querySelector(".popup_close img");
+
+  openThankYouPopup.forEach((button) => {
+    button.addEventListener("click", () => {
+      thankYouPopup.classList.add("active");
+    });
+  });
+  popupClose.addEventListener("click", function () {
+    thankYouPopup.classList.remove("active");
+  });
+
   menuButton.addEventListener("click", function (event) {
     menuList.style.transform = "translateX(0)";
     event.stopPropagation();
@@ -17,6 +32,16 @@ document.addEventListener("DOMContentLoaded", function () {
       menuListClose.contains(event.target)
     ) {
       menuList.style.transform = "translateX(100%)";
+    }
+  });
+
+  document.addEventListener("click", function (event) {
+    if (
+      thankYouPopup.classList.contains("active") &&
+      !thankYouPopup.querySelector(".popup_info").contains(event.target) &&
+      !event.target.classList.contains("main_fifth--cards--el--btn")
+    ) {
+      thankYouPopup.classList.remove("active");
     }
   });
 });
