@@ -1,0 +1,51 @@
+.popup {
+    transition: 0.3s ease-in-out;
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+    opacity: 0;
+    width: 516px;
+    height: 414px;
+    background-color: #FD9222;
+    border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    background-image: url('../../img/popup.png');
+
+    &_close {
+        margin-top: 24px;
+        display: flex;
+        justify-content: end;
+        padding-right: 24px;
+        margin-bottom: 90px;
+    }
+
+    &_info {
+        padding-left: 163px;
+
+        &--title {
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -2%;
+            text-transform: uppercase;
+            color: #FCF1E0;
+            margin-bottom: 8px;
+        }
+
+        &--text {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -2%;
+            color: white;
+            max-width: 309px;
+        }
+    }
+}

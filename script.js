@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const thankYouPopup = document.querySelector(".popup");
   const popupClose = document.querySelector(".popup_close img");
 
+  const explorePopupOpen = document.querySelector(".main_eighth--btn");
+  const explorePopupClose = document.querySelector(".explore_popup--close img");
+
+  const explorePopup = document.querySelector(".explore_popup");
+
   openThankYouPopup.forEach((button) => {
     button.addEventListener("click", () => {
       thankYouPopup.classList.add("active");
@@ -18,6 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   popupClose.addEventListener("click", function () {
     thankYouPopup.classList.remove("active");
+  });
+
+  explorePopupOpen.addEventListener("click", function () {
+    explorePopup.classList.add("active");
+  });
+
+  explorePopupClose.addEventListener("click", function () {
+    explorePopup.classList.remove("active");
   });
 
   menuButton.addEventListener("click", function (event) {

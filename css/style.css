@@ -839,6 +839,97 @@ html {
   color: #ffffff;
 }
 
+.explore_popup {
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 538px;
+  height: 412px;
+  pointer-events: none;
+}
+.explore_popup.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.explore_popup--image {
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+}
+.explore_popup--content {
+  position: relative;
+}
+.explore_popup--close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.explore_popup--info {
+  background-color: white;
+  padding: 40px;
+  border-radius: 0 0 15px 15px;
+}
+.explore_popup--info--title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -3%;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  color: #111111;
+}
+.explore_popup--info--title span {
+  color: orange;
+}
+.explore_popup--fields {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.explore_popup--fields input {
+  width: 313px;
+  height: 52px;
+  border-radius: 30px;
+  padding-left: 24px;
+  border: 1.5px solid rgba(17, 17, 17, 0.0509803922);
+  outline: none;
+}
+.explore_popup--fields input::-moz-placeholder {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: rgba(64, 64, 64, 0.3019607843);
+}
+.explore_popup--fields input::placeholder {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: rgba(64, 64, 64, 0.3019607843);
+}
+.explore_popup--fields--btn {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white;
+  width: 137px;
+  height: 52px;
+  background-color: orange;
+  border-radius: 100px;
+  border: 0;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1050px) {
   .header_right {
     display: none;
