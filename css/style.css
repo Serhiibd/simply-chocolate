@@ -930,6 +930,112 @@ html {
   cursor: pointer;
 }
 
+.review_popup {
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  width: 517px;
+  height: 631px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.review_popup.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.review_popup--content {
+  position: relative;
+}
+.review_popup--content--btn {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+.review_popup--content--textarea {
+  width: 437px;
+  height: 137px;
+  resize: none;
+  outline: none;
+  border-radius: 13px;
+  padding-left: 24px;
+  padding-top: 22px;
+  border: 1.5px solid rgba(17, 17, 17, 0.0509803922);
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+}
+.review_popup--content--input {
+  width: 437px;
+  height: 66px;
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.0509803922);
+  box-shadow: 0px 5.44px 5.44px 0px rgba(0, 0, 0, 0.031372549);
+  outline: none;
+  padding-left: 24px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+}
+.review_popup--content--input--phone {
+  position: relative;
+}
+.review_popup--content--input--phone--flag {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 32px;
+  border-right: 2.72px solid rgba(0, 0, 0, 0.1019607843);
+  left: 24px;
+  align-items: center;
+  gap: 18px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+}
+.review_popup--content--input--phone input {
+  padding-left: 177px;
+}
+.review_popup--content--close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+.review_popup--content--info {
+  padding: 40px;
+}
+.review_popup--content--info form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.review_popup--content--title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -3%;
+  text-transform: uppercase;
+  color: #111111;
+  max-width: 310px;
+  margin-bottom: 40px;
+}
+.review_popup--content--title span {
+  color: #fd9222;
+}
+
 @media screen and (max-width: 1050px) {
   .header_right {
     display: none;
