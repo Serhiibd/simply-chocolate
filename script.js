@@ -15,6 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const explorePopupClose = document.querySelector(".explore_popup--close img");
 
   const explorePopup = document.querySelector(".explore_popup");
+  const reviewPopupOpen = document.querySelector(".main_seventh--btn");
+  const reviewPopup = document.querySelector(".review_popup");
+  const reviewPopupClose = document.querySelector(".review_popup--content--close img");
+  const orderPopupOpen = document.querySelector(".main_sixth--bottom--btn");
+  const orderPopup = document.querySelector(".order_popup");
+  const orderPopupClose = document.querySelector(".order_popup--content--close--icon");
 
   openThankYouPopup.forEach((button) => {
     button.addEventListener("click", () => {
@@ -38,6 +44,21 @@ document.addEventListener("DOMContentLoaded", function () {
     event.stopPropagation();
   });
 
+  reviewPopupOpen.addEventListener("click", function () {
+    reviewPopup.classList.add("active");
+  });
+  reviewPopupClose.addEventListener("click", function () {
+    reviewPopup.classList.remove("active");
+  });
+  
+  orderPopupOpen.addEventListener("click", function () {
+    orderPopup.classList.add("active");
+  });
+  
+  orderPopupClose.addEventListener("click", function () {
+    orderPopup.classList.remove("active");
+  });
+
   document.addEventListener("click", function (event) {
     if (
       (!menuList.contains(event.target) &&
@@ -58,3 +79,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+

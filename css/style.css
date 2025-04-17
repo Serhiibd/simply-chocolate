@@ -865,6 +865,7 @@ html {
   position: absolute;
   top: 24px;
   right: 24px;
+  cursor: pointer;
 }
 .explore_popup--info {
   background-color: white;
@@ -932,7 +933,7 @@ html {
 
 .review_popup {
   transition: 0.4s ease-in-out;
-  opacity: 0;
+  display: none;
   width: 517px;
   height: 631px;
   background-color: #ffffff;
@@ -943,8 +944,11 @@ html {
   transform: translate(-50%, -50%);
 }
 .review_popup.active {
-  opacity: 1;
+  display: block;
   pointer-events: all;
+}
+.review_popup.active form {
+  display: flex;
 }
 .review_popup--content {
   position: relative;
@@ -1017,7 +1021,7 @@ html {
   padding: 40px;
 }
 .review_popup--content--info form {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 19px;
 }
@@ -1034,6 +1038,213 @@ html {
 }
 .review_popup--content--title span {
   color: #fd9222;
+}
+
+.order_popup {
+  width: 609px;
+  background-color: white;
+  border-radius: 15px;
+  transition: 0.4 ease-in-out;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  max-height: 84vh;
+  scrollbar-width: none;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100;
+}
+.order_popup.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.order_popup--content {
+  padding: 0 48px 48px 48px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order_popup--content--close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+.order_popup--content--title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -3%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+  padding-top: 48px;
+  margin-bottom: 32px;
+}
+.order_popup--content--title span {
+  color: #fd9222;
+}
+.order_popup--content--cards {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.order_popup--content--cards--el {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  height: 196px;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1019607843);
+}
+.order_popup--content--cards--el--text {
+  width: 96px;
+  height: 33px;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1019607843);
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order_popup--form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+.order_popup--form--field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.order_popup--form--field--title {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+  color: black;
+  margin-bottom: 8px;
+}
+.order_popup--form--field--wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 21px;
+}
+.order_popup--form--field--input {
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.0509803922);
+  box-shadow: 0px 5.44px 5.44px 0px rgba(0, 0, 0, 0.031372549);
+  height: 66px;
+  width: 100%;
+  padding-left: 24px;
+  outline: none;
+}
+.order_popup--form--field--input::-moz-placeholder {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: rgba(64, 64, 64, 0.3019607843);
+}
+.order_popup--form--field--input::placeholder {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: rgba(64, 64, 64, 0.3019607843);
+}
+.order_popup--form--field--phone {
+  position: relative;
+}
+.order_popup--form--field--phone--value {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: black;
+}
+.order_popup--form--field--phone input {
+  padding-left: 177px;
+}
+.order_popup--form--field--phone--code {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-right: 32px;
+  border-right: 2.72px solid rgba(0, 0, 0, 0.1019607843);
+}
+.order_popup--form--field--mastercard {
+  position: relative;
+}
+.order_popup--form--field--mastercard--icon {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+}
+.order_popup--form--field textarea {
+  resize: none;
+  width: 513px;
+  height: 137px;
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.0509803922);
+  padding: 22px 24px;
+}
+.order_popup--form--field textarea::-moz-placeholder {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: rgba(64, 64, 64, 0.3019607843);
+}
+.order_popup--form--field textarea::placeholder {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  vertical-align: middle;
+  color: rgba(64, 64, 64, 0.3019607843);
+}
+.order_popup--form--field--btn {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white;
+  background-color: #fd9222;
+  border-radius: 100px;
+  width: 133px;
+  height: 45px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1050px) {
