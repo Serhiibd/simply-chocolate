@@ -897,6 +897,7 @@ html {
   cursor: pointer;
 }
 .explore_popup--info {
+  margin-top: -5px;
   background-color: white;
   padding: 40px;
   border-radius: 0 0 15px 15px;
@@ -960,6 +961,39 @@ html {
   cursor: pointer;
 }
 
+@media screen and (max-width: 560px) {
+  .explore_popup {
+    width: 430px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .explore_popup {
+    width: 385px;
+  }
+  .explore_popup--fields {
+    flex-direction: column;
+  }
+  .explore_popup--fields--btn {
+    width: 100%;
+  }
+  .explore_popup--fields input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 415px) {
+  .explore_popup {
+    width: 348px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .explore_popup {
+    width: 290px;
+  }
+  .explore_popup--info--title {
+    font-size: 22px;
+    text-align: center;
+  }
+}
 .review_popup {
   transition: 0.4s ease-in-out;
   visibility: hidden;

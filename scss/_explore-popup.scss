@@ -31,6 +31,7 @@
   }
 
   &--info {
+    margin-top: -5px;
     background-color: white;
     padding: 40px;
     border-radius: 0 0 15px 15px;
@@ -88,6 +89,43 @@
       border-radius: 100px;
       border: 0;
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .explore_popup {
+    width: 430px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .explore_popup {
+    width: 385px;
+    &--fields {
+      flex-direction: column;
+      &--btn {
+        width: 100%;
+      }
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .explore_popup {
+    width: 348px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .explore_popup {
+    width: 290px;
+    &--info--title {
+      font-size: 22px;
+      text-align: center;
     }
   }
 }
