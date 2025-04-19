@@ -1,7 +1,8 @@
 .review_popup {
   transition: 0.4s ease-in-out;
   &.active {
-    display: block;
+    visibility: visible;
+    opacity: 1;
     pointer-events: all;
 
     form {
@@ -9,7 +10,8 @@
     }
   }
 
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   width: 517px;
   height: 631px;
   background-color: #ffffff;

@@ -51,3 +51,35 @@
     }
   }
 }
+
+@media screen and (max-width: 550px) {
+  .popup {
+    width: 430px;
+    &_info {
+      padding-left: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .popup {
+    width: 360px;
+    &_info {
+      padding-left: 120px;
+      &--text {
+        font-size: 14px;
+        max-width: 250px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .popup {
+    width: 305px;
+    &_info {
+      padding-left: 85px;
+    }
+  }
+}

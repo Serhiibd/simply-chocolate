@@ -839,6 +839,35 @@ html {
   color: #ffffff;
 }
 
+@media screen and (max-width: 550px) {
+  .popup {
+    width: 430px;
+  }
+  .popup_info {
+    padding-left: 150px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .popup {
+    width: 360px;
+  }
+  .popup_info {
+    padding-left: 120px;
+  }
+  .popup_info--text {
+    font-size: 14px;
+    max-width: 250px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .popup {
+    width: 305px;
+  }
+  .popup_info {
+    padding-left: 85px;
+  }
+}
 .explore_popup {
   transition: 0.5s ease-in-out;
   opacity: 0;
@@ -933,7 +962,8 @@ html {
 
 .review_popup {
   transition: 0.4s ease-in-out;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   width: 517px;
   height: 631px;
   background-color: #ffffff;
@@ -944,7 +974,8 @@ html {
   transform: translate(-50%, -50%);
 }
 .review_popup.active {
-  display: block;
+  visibility: visible;
+  opacity: 1;
   pointer-events: all;
 }
 .review_popup.active form {
@@ -1044,7 +1075,7 @@ html {
   width: 609px;
   background-color: white;
   border-radius: 15px;
-  transition: 0.4 ease-in-out;
+  transition: 0.4s ease-in-out;
   position: fixed;
   top: 50%;
   left: 50%;
