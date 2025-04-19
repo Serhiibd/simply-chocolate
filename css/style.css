@@ -1356,6 +1356,57 @@ html {
   cursor: pointer;
 }
 
+@media screen and (max-width: 675px) {
+  .order_popup {
+    width: 560px;
+  }
+  .order_popup--content--cards {
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  .order_popup--content--cards--el {
+    justify-content: center;
+  }
+  .order_popup--form--field--btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .order_popup {
+    width: 495px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .order_popup {
+    width: 370px;
+  }
+  .order_popup input,
+  .order_popup textarea {
+    width: 100%;
+  }
+  .order_popup--content--cards--el {
+    width: 100%;
+  }
+  .order_popup--form--field--wrapper {
+    flex-direction: column;
+  }
+  .order_popup--form--field--phone--code {
+    display: none;
+  }
+  .order_popup--form--field--phone input {
+    padding-left: 24px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .order_popup {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .order_popup {
+    width: 300px;
+  }
+}
 @media screen and (max-width: 1050px) {
   .header_right {
     display: none;

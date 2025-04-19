@@ -211,3 +211,63 @@
     }
   }
 }
+
+@media screen and (max-width: 675px) {
+  .order_popup {
+    width: 560px;
+    &--content {
+      &--cards {
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        &--el {
+          justify-content: center;
+        }
+      }
+    }
+    &--form--field--btn {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .order_popup {
+    width: 495px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .order_popup {
+    width: 370px;
+    input,
+    textarea {
+      width: 100%;
+    }
+    &--content--cards--el {
+      width: 100%;
+    }
+    &--form--field--wrapper {
+      flex-direction: column;
+    }
+    &--form--field--phone {
+      &--code {
+        display: none;
+      }
+      input {
+        padding-left: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .order_popup {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .order_popup {
+    width: 300px;
+  }
+}
