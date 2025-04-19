@@ -111,3 +111,55 @@
     }
   }
 }
+
+@media screen and (max-width: 560px) {
+  .review_popup {
+    width: 430px;
+    input,
+    textarea {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .review_popup {
+    width: 400px;
+    &--content--title {
+      max-width: 260px;
+    }
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .review_popup {
+    width: 370px;
+    &--content--input--phone {
+      &--flag {
+        padding-right: 17px;
+      }
+      input {
+        padding-left: 150px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 385px) {
+  .review_popup {
+    width: 320px;
+    &--content--input--phone {
+      &--flag {
+        display: none;
+      }
+      input {
+        padding-left: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .review_popup {
+    width: 320px;
+  }
+}
