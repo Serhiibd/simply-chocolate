@@ -35,6 +35,7 @@
     &--mobile {
       display: none;
       position: relative;
+      z-index: 100;
       &--list {
         position: fixed;
         top: 0;

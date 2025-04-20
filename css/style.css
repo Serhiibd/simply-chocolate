@@ -70,6 +70,7 @@ html {
 .header_right--mobile {
   display: none;
   position: relative;
+  z-index: 100;
 }
 .header_right--mobile--list {
   position: fixed;
@@ -1545,7 +1546,7 @@ html {
 @media screen and (max-width: 607px) {
   .main_third--cards {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 270px);
   }
 }
 @media screen and (max-width: 605px) {
